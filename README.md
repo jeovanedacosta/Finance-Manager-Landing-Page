@@ -12,9 +12,9 @@ index.html
 css/style.css
 js/main.js
 assets/        favicon.svg e mockups (jpg + webp)
+CNAME          domínio personalizado do GitHub Pages
 robots.txt
 sitemap.xml
-.github/workflows/deploy.yml
 ```
 
 ## Rodando localmente
@@ -26,30 +26,16 @@ python3 -m http.server 8080
 # abra http://localhost:8080
 ```
 
-## Deploy (S3 + CloudFront + GitHub Actions)
+## Deploy (GitHub Pages)
 
-O workflow [deploy.yml](.github/workflows/deploy.yml) roda no push para `main` e também manualmente.
-Ele só executa quando a variável de repositório `DEPLOY_ENABLED` for `true`.
+O site é publicado direto da branch `main` (raiz) pelo GitHub Pages, sem build e sem workflow.
+O arquivo `CNAME` define o domínio `sobre.financemanager-ai.com.br` e o `.nojekyll` desativa o processamento Jekyll.
 
-### O que você precisa criar na AWS
+1. No repositório: **Settings → Pages → Build and deployment**: Source `Deploy from a branch`, branch `main`, pasta `/ (root)`.
+2. No DNS de `financemanager-ai.com.br`, crie um registro **CNAME**: nome `sobre`, valor `jeovanedacosta.github.io`.
+3. Em **Settings → Pages → Custom domain**, confirme `sobre.financemanager-ai.com.br` e, quando o certificado estiver pronto, marque **Enforce HTTPS**.
 
-1. **Bucket S3 novo** (exclusivo da landing), com acesso público bloqueado.
-2. **Distribuição CloudFront** com o bucket como origem (OAC), `index.html` como objeto raiz e redirecionamento para HTTPS.
-3. **Certificado ACM** para `sobre.financemanager-ai.com.br` na região `us-east-1`, associado à distribuição, com o domínio como CNAME alternativo.
-4. **DNS:** registro CNAME/ALIAS de `sobre` apontando para o domínio do CloudFront.
-5. **Usuário IAM** com permissão `s3:PutObject`, `s3:DeleteObject`, `s3:ListBucket` no bucket e `cloudfront:CreateInvalidation` na distribuição.
-
-### Secrets do GitHub (Settings → Secrets and variables → Actions)
-
-| Nome | Descrição |
-|---|---|
-| `LANDING_AWS_ACCESS_KEY_ID` | Chave do usuário IAM |
-| `LANDING_AWS_SECRET_ACCESS_KEY` | Segredo do usuário IAM |
-| `LANDING_AWS_REGION` | Região do bucket (ex.: `sa-east-1`) |
-| `LANDING_S3_BUCKET_NAME` | Nome do bucket novo |
-| `LANDING_CLOUDFRONT_DISTRIBUTION_ID` | ID da distribuição |
-
-Variável (não secret): `DEPLOY_ENABLED=true`, para ativar o deploy.
+Cada push na `main` publica automaticamente.
 
 ## Aviso
 
