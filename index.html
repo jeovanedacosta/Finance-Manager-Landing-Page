@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinanceManager | Imposto de Renda e DARF para investidores</title>
+  <meta name="description" content="Controle sua carteira, apure o valor do DARF mês a mês e deixe a declaração do Imposto de Renda pronta para copiar. Ações, FIIs, ETFs, cripto, Tesouro e CDB. Grátis.">
+  <meta name="theme-color" content="#050b0a">
+  <link rel="canonical" href="https://sobre.financemanager-ai.com.br/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="FinanceManager">
+  <meta property="og:title" content="FinanceManager | Imposto de Renda e DARF sem dor de cabeça">
+  <meta property="og:description" content="Preço médio automático, apuração mensal do DARF e declaração anual pronta para copiar.">
+  <meta property="og:url" content="https://sobre.financemanager-ai.com.br/">
+  <meta property="og:image" content="https://sobre.financemanager-ai.com.br/assets/mockup-dashboard.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FinanceManager | Imposto de Renda e DARF sem dor de cabeça">
+  <meta name="twitter:description" content="Preço médio automático, apuração mensal do DARF e declaração anual pronta para copiar.">
+  <meta name="twitter:image" content="https://sobre.financemanager-ai.com.br/assets/mockup-dashboard.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "FinanceManager",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://financemanager-ai.com.br",
+        "inLanguage": "pt-BR",
+        "description": "Gestão de carteira de investimentos com apuração de Imposto de Renda e DARF para pessoa física.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "O FinanceManager é grátis?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Você cria a conta e usa o sistema sem custo." } },
+          { "@type": "Question", "name": "O FinanceManager substitui meu contador?", "acceptedAnswer": { "@type": "Answer", "text": "Não. É uma ferramenta de apoio e não substitui orientação contábil. Confira os valores antes de pagar o DARF ou entregar a declaração." } },
+          { "@type": "Question", "name": "Quais ativos são aceitos?", "acceptedAnswer": { "@type": "Answer", "text": "Ações, FIIs, ETFs, criptomoedas, Tesouro Direto e CDB." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#topo" class="logo" aria-label="FinanceManager, início">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>Finance<strong>Manager</strong></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#ir">IR e DARF</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--primary btn--sm nav__cta" id="nav-cta" href="https://financemanager-ai.com.br">Começar grátis</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="badge reveal">Foco em Imposto de Renda e DARF</span>
+          <h1 class="reveal">Imposto de Renda de investimentos <span class="gradient-text">sem dor de cabeça</span></h1>
+          <p class="hero__sub reveal">Registre suas operações e o FinanceManager calcula o preço médio, separa swing trade, day trade e FIIs, compensa prejuízos e apura o valor do DARF mês a mês. No fim do ano, é só copiar para a declaração.</p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary btn--lg" id="hero-cta" href="https://financemanager-ai.com.br">Começar grátis</a>
+            <a class="btn btn--ghost btn--lg" id="hero-ir" href="#ir">Ver como funciona o IR</a>
+          </div>
+          <ul class="hero__stats reveal">
+            <li><strong data-count="6" data-suffix="">0</strong><span>tipos de ativos</span></li>
+            <li><strong data-count="100" data-suffix="%">0</strong><span>gratuito</span></li>
+            <li><strong data-count="4" data-suffix="">0</strong><span>seções da declaração prontas</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="mockup float">
+            <picture>
+              <source srcset="assets/mockup-dashboard.webp" type="image/webp">
+              <img src="assets/mockup-dashboard.jpg" width="1376" height="768" alt="Painel do FinanceManager com patrimônio total, alocação de ativos e transações recentes">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Destaques">
+      <div class="container trust__inner">
+        <span class="chip">Gratuito</span>
+        <span class="chip">Ações · FIIs · ETFs · Cripto · Tesouro · CDB</span>
+        <span class="chip">Funciona no celular</span>
+      </div>
+    </section>
+
+    <section class="section" id="ir">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">O coração do sistema</span>
+          <h2>IR e DARF, do cálculo à declaração</h2>
+          <p>Tudo o que a Receita exige de quem investe em renda variável, organizado a partir das suas operações.</p>
+        </div>
+
+        <div class="ir-grid">
+          <div class="ir-cards">
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">📈</div>
+              <h3>Preço médio automático</h3>
+              <p>Atualizado a cada compra e venda, sem planilha.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">🗂️</div>
+              <h3>Swing, day trade e FIIs</h3>
+              <p>Cada modalidade apurada separadamente, com a alíquota correspondente.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">🛡️</div>
+              <h3>Isenção de R$ 20 mil/mês</h3>
+              <p>Considerada na apuração das vendas de ações no mês.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">♻️</div>
+              <h3>Compensação de prejuízos</h3>
+              <p>Prejuízos do mês e de meses anteriores compensados automaticamente.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">🧾</div>
+              <h3>DARF mês a mês</h3>
+              <p>O sistema apura o valor do DARF de cada mês para você acompanhar.</p>
+            </article>
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">📋</div>
+              <h3>Declaração anual pronta</h3>
+              <p>Bens e Direitos, Rendimentos Isentos, Tributação Exclusiva e Renda Variável, com cópia por campo e PDF.</p>
+            </article>
+          </div>
+          <div class="ir-visual reveal">
+            <div class="mockup mockup--glow">
+              <picture>
+                <source srcset="assets/mockup-ir.webp" type="image/webp">
+                <img src="assets/mockup-ir.jpg" width="1376" height="658" loading="lazy" alt="Tela de apuração mensal e DARF do FinanceManager, com tabela de meses e botão de copiar">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="como-funciona">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Três passos até a declaração</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__n">1</span><h3>Cadastre suas operações</h3><p>Lance compras, vendas e proventos dos seus ativos.</p></li>
+          <li class="step reveal"><span class="step__n">2</span><h3>O sistema apura</h3><p>Preço médio, lucro, prejuízo compensado e valor do DARF, mês a mês.</p></li>
+          <li class="step reveal"><span class="step__n">3</span><h3>Copie para a declaração</h3><p>Use a cópia por campo ou baixe o PDF e confira com seu programa da Receita.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="funcionalidades">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Além do imposto</span>
+          <h2>Sua vida financeira em um só lugar</h2>
+        </div>
+        <div class="features">
+          <div class="features__list">
+            <article class="card reveal"><h3>Carteira completa</h3><p>Ações, FIIs, ETFs, cripto, Tesouro e CDB com patrimônio e alocação em tempo real.</p></article>
+            <article class="card reveal"><h3>Proventos</h3><p>Dividendos, JCP e rendimentos registrados e prontos para a declaração.</p></article>
+            <article class="card reveal"><h3>Finanças pessoais</h3><p>Lance gastos por áudio ou foto da nota e acompanhe suas metas.</p></article>
+            <article class="card reveal"><h3>Funciona no celular</h3><p>Interface pensada para usar no bolso, sem instalar nada.</p></article>
+          </div>
+          <div class="features__phone reveal">
+            <div class="phone float">
+              <picture>
+                <source srcset="assets/mockup-mobile.webp" type="image/webp">
+                <img src="assets/mockup-mobile.jpg" width="768" height="1376" loading="lazy" alt="FinanceManager no celular com saldo, metas de gastos e lançamento por áudio, foto ou arquivo">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="eyebrow">Dúvidas</span>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>É grátis?</summary>
+            <p>Sim. Você cria a conta e usa o sistema sem custo.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Meus dados estão seguros?</summary>
+            <p>Seus dados ficam protegidos por autenticação e conexão criptografada (HTTPS). Você acessa apenas as suas informações.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Substitui meu contador?</summary>
+            <p>Não. O FinanceManager é uma ferramenta de apoio e não substitui orientação contábil. Confira os valores apurados antes de pagar o DARF ou entregar a declaração.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Quais ativos posso controlar?</summary>
+            <p>Ações, FIIs, ETFs, criptomoedas, Tesouro Direto e CDB.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>O sistema emite o DARF?</summary>
+            <p>O sistema apura o valor do DARF de cada mês. O pagamento é feito por você, com a guia gerada nos canais oficiais da Receita Federal.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta__box reveal">
+          <h2>Chegue à declaração com tudo calculado</h2>
+          <p>Crie sua conta grátis e comece a registrar suas operações hoje.</p>
+          <a class="btn btn--primary btn--lg" id="final-cta" href="https://financemanager-ai.com.br">Começar grátis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#topo" class="logo"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Finance<strong>Manager</strong></span></a>
+        <nav aria-label="Rodapé">
+          <a href="https://financemanager-ai.com.br">Acessar o app</a>
+          <a href="#ir">IR e DARF</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+      <p class="footer__legal">O FinanceManager é uma ferramenta de apoio e não substitui orientação contábil. Confira sempre os valores apurados antes de pagar tributos ou entregar a declaração.</p>
+      <p class="footer__copy">© <span id="year">2026</span> FinanceManager. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
